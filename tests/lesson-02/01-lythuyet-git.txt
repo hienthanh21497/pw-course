@@ -1,0 +1,11 @@
+1. git init  
+- git init dùng để khởi tạo git, đưa các file vào working directory area  
+
+2. git add <file_name>  
+- Dùng để đưa <file_name> vào vùng staging
+
+3. git add .  
+- Dùng để đưa toàn bộ các file trong working directory vào vùng staging
+
+4. git commit -m "message"  
+- Dùng để đưa các file từ vùng staging vào vùng repository kèm theo message tương ứng
