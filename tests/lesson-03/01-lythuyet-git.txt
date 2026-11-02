@@ -1,0 +1,14 @@
+1. git commit --amend  
+- Sử dụng để mở chỉnh sửa VIM cho commit cuối cùng
+- Nhấn i để input phần muốn sửa
+- Nhấn ESC để thoát sửa
+- Nhấn :wq để viết và quit khỏi VIM
+
+2. git commit --amend -m "<message>"
+- Dùng để sửa đổi message của commit cuối cùng
+
+3. git restore --staged <file>
+- Dùng để đưa <file> từ vùng staging về cùng Working Directory
+
+4. git reset HEAD~1
+- Dùng để đưa 1 file gần nhất từ vùng Repository về vùng Working Directory

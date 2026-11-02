@@ -1,0 +1,6 @@
+a. Tạo 3 file: file1, file2, file3 => vùng local
+b. Chạy lệnh git init => vùng working diretory
+c. Chạy lệnh git commit -m "init project" => Lỗi, chưa có file nào được add vào vùng staging
+d. Chạy lệnh git add file1 => vùng staging
+e. Chạy lệnh git commit -m "add file1"  => vùng repository
+f. Chạy lệnh git commit -m "add file" => Lỗi, không còn file nào ở vùng staging
