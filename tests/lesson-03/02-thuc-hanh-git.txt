@@ -1,0 +1,50 @@
+a. Tao 3 file: file1, file2, file 3
+- Local: file1, file2, file3
+- Working Directory:
+- Staging:
+- Repository:
+
+b. Chay lenh: git init
+- Local: 
+- Working Directory: file1, file2, file3
+- Staging:
+- Repository:
+
+c. Chay lenh: git commit -m "init project"
+- Lenh bao loi do khong co file nao dang o vung Staging
+
+d. Chay lenh: git add file1
+- Local: 
+- Working Directory: file2, file3
+- Staging: file1
+- Repository:
+
+e. Chay lenh: git commit -m"add file"
+- Local: 
+- Working Directory: file2, file3
+- Staging: 
+- Repository: file1
+
+f. Chay lenh: git add .
+- Local: 
+- Working Directory: 
+- Staging: file2, file3
+- Repository: file1
+
+g. Chay lenh: git restore --staged file2
+- Local: 
+- Working Directory: file2
+- Staging: file3
+- Repository: file1
+
+h. Chay lenh: git commit -m"add all files"
+- Local: 
+- Working Directory: file2
+- Staging: 
+- Repository: file1, file3
+
+i. Chay lenh: git reset HEAD~1
+- Local: 
+- Working Directory: file2, file3
+- Staging: 
+- Repository: file1
