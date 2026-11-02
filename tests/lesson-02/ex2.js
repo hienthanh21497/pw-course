@@ -1,3 +1,3 @@
-let MyName = "Alex";
-MyName = "Nagi";
-console.log(MyName);
+let myName = "Alex";
+myName = "Nagi";
+console.log(myName);
