@@ -53,8 +53,10 @@ Viết hàm calculateInterest nhận 3 tham số:
 Hàm tính và trả về tổng số tiền (gốc + lãi) sau years năm, sử dụng công thức lãi đơn: total = principal + principal * rate * years / 100. 
 Gọi hàm với ví dụ thực tế và in kết quả.
 */
-function caculateInterest(principal, rate, years) {
+function calculateInterest(principal, rate, years) {
     let total = principal + principal * rate * years / 100;
+    console.log(`Tổng lợi nhuận sau ${years} năm là ${total}`); // Áp biến years theo total
     return total
 }
-console.log(`Tổng lợi nhuận trong là ${caculateInterest(100000, 5, 5)}`)
+calculateInterest(100000, 5, 5);
+calculateInterest(200000, 2, 4);
