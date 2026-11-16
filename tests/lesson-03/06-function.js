@@ -14,10 +14,9 @@ function findMin(a, b, c) {
     if (c < min) {
         min = c
     };
-    console.log(`Số nhỏ nhất là ${min}`);
+    return min;
 }
-findMin(49, 392, 54);
-findMin(54, 1, 53);
+console.log(`Số nhỏ nhất là ${findMin(100, 88, 87)}`);
 
 /* 3. Viết hàm getTopStudents nhận 2 tham số:
 - students: mảng các object, mỗi object chứa name và score
@@ -30,7 +29,7 @@ function getTopStudents(students, threshold) {
 
     // Duyệt qua từng học sinh trong mảng students
     for (const student of students) {
-        if (student.score > threshold) {
+        if (student.score >= threshold) {
             topStudents.push(student.name); // Thêm tên học sinh đạt điều kiện vào mảng
         };
     }
@@ -46,7 +45,7 @@ const students = [
 const result = getTopStudents(students, 8);
 console.log(result); // Kết quả: [ 'A', 'C' ]
 
-/*
+/* 4. 
 Viết hàm calculateInterest nhận 3 tham số:
 - principal: số tiền gửi ban đầu (số)
 - rate: lãi suất hàng năm (phần trăm, ví dụ 5 nghĩa là 5%)
@@ -56,7 +55,6 @@ Gọi hàm với ví dụ thực tế và in kết quả.
 */
 function caculateInterest(principal, rate, years) {
     let total = principal + principal * rate * years / 100;
-    console.log(`Tổng số tiền (gốc + lãi) sau ${years} năm là ${total}`);
+    return total
 }
-caculateInterest(100, 5, 1);
-caculateInterest(5000000, 8.2, 7)
+console.log(`Tổng lợi nhuận trong là ${caculateInterest(100000, 5, 5)}`)
